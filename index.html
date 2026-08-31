@@ -1,0 +1,64 @@
+<<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>gurew23-github.io</title>
+    <style>
+    	@keyframes textFadeIn {
+    		0%   {opacity: 0;}
+    		100% {opacity: 1;}
+    	}
+    	@keyframes rainbowFlow {
+            0% { background-position: 0%; }
+            100% { background-position: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div id="Welcome" 
+    style="
+	font-size:40px;
+	text-align:center;
+	margin:40px auto;
+	opacity:0;
+	animation:textFadeIn 2s ease forwards;
+	">
+		Welcome to...
+	</div>
+
+	<div id="MainText"
+    style="
+	font-size:40px;
+	font-weight:bold;
+	text-align:center;
+	margin:40px auto;
+	opacity:0;
+	animation: rainbowFlow 1.8s linear infinite;
+	background:linear-gradient(90deg,red,orange,yellow,green,cyan,blue,purple,red);
+	background-size:200% 100%;
+	-webkit-background-clip:text;
+	background-clip:text;
+	color:transparent;
+	">
+		The software and tool of gurew23!
+	</div>
+	<div id="Content" style="
+	font-size:22px;
+	text-align:center;
+	margin:20px auto;
+	opacity:0;
+	">
+        <a href="https://gurew23.github.io/mathsuper">
+        	About MathSuper
+        </a>
+    </div>
+
+	<script>
+		setTimeout(function(){
+			document.getElementById("Welcome").remove();
+			document.getElementById("MainText").style.opacity = "1";
+			document.getElementById("Content").style.opacity = "1";
+		}, 3000);
+	</script>
+</body>
+</html>
